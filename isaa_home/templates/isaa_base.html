@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  {% block title %}Irish Student Archery Association{% endblock %}
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+</head>
+
+<body style="background-image: url('{{STATIC_URL}}/static/DSC5968.jpg'); background-repeat: no-repeat; background-attachment: fixed;background-size: cover; backdrop-filter: blur(0px);">
+<!-- style="background: linear-gradient(to right, #169B62 20%, white 50%, #FF883E 80%);" -->
+<div class="container-fluid sticky-top" style="background-color: #169B62;">
+    <ul class="nav" >
+        <a class="navbar-brand" href="/">
+            <img src="{% static 'logosquare.png' %}" alt="ISAA LOGO" width="32" height="32">
+        </a>
+        <li class="nav-item">
+            <a class="nav-link link-light" href="/"><b>HOME</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link link-light" href="/clubs"><b>CLUBS</b></a>
+        </li>
+        <li class="nav-item"></li>
+            <a class="nav-link link-light" href="/history"><b>HISTORY</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link link-light" href="/resources"><b>RESOURCES</b></a>
+        </li>
+        <li class="nav-item"></li>
+            <a class="nav-link link-light" href="/gallery"><b>GALLERY</b></a>
+        </li>
+    </ul>
+</div>
+<p class="container-fluid">
+    <div class="container" style="min-height: 600px;">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted" style="background: linear-gradient(180deg, rgba(255,0,0,0), white 3%);">
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container-fluid text-center text-md-start mt-3 pt-3">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>About
+            </h6>
+            <p>
+              Irish Student Archery Association is the governing body of student archery in Ireland and governs the running of student competitions
+            </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Links
+            </h6>
+            <p>
+              <a href="/" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="/clubs" class="text-reset">Clubs</a>
+            </p>
+            <p>
+              <a href="/history" class="text-reset">History</a>
+            </p>
+            <p>
+              <a href="/resources" class="text-reset">Resources</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 align-items-center justify-content-center" style="background-color: #169B62;">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="text-align: center;">Contact</h6>
+            <a style="content: center; justify-content: center;">
+                <a href="https://www.instagram.com/irish_student_archery/"><img src="{% static 'instagram.png' %}" title="Instagram" style="width: 40px; height: 40px;" ></img></a>
+                <a href="https://www.instagram.com/irish_student_archery/"></a><img src="{% static 'whatsapp.png' %}" title="Whatsapp" style="width: 40px; height: 40px;"></img></a>
+            </a>
+            <p style="padding: 5px; text-align: center;">
+                <a style="color:black; background-color: black;" href="mailto:isaasecretary@archery.ie">ISAASecretary@archery.ie</a>
+                <a style="color:black" href="mailto:isaawebmaster@archery.ie">ISAAWebmaster@archery.ie</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  </footer>
+  <!-- Footer -->
+
+</html>
