@@ -3,3 +3,4 @@ gunicorn
 pandas
 python-dotenv
 whitenoise
+django-bootstrap5
