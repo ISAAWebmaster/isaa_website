@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-py6)n20jkl5b_0@zat^1m76xdz)%+#6hc=&lt43@dbgi(=v8ok
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1", "isaa.rb.dcu.ie"]
+ALLOWED_HOSTS = [ "*" ]
 
 
 # Application definition
@@ -123,9 +123,7 @@ STATIC_ROOT = BASE_DIR / 'productionfiles'
 STATIC_URL = 'static/'
 
 #Add this in your settings.py file:
-#STATICFILES_DIRS = [
-#    BASE_DIR / 'staticfiles',
-#]
+#STATICFILES_DIRS = [ BASE_DIR / 'staticfiles', ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
