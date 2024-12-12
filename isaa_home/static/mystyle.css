@@ -9,7 +9,7 @@
 }
 
 .background_headache{
-    background-image: url("{% static 'DSC5968.jpg' %}");
+    background-image: url("/static/DSC5968.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;background-size: cover;
     backdrop-filter: blur(0px);
