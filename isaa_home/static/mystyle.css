@@ -7,3 +7,10 @@
     color:white;
     text-shadow: 4px 1px 6px #000000;
 }
+
+.background_headache{
+    background-image: url("{% static 'DSC5968.jpg' %}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;background-size: cover;
+    backdrop-filter: blur(0px);
+}
