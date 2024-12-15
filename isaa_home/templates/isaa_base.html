@@ -9,32 +9,39 @@
   <link rel="stylesheet" href="{% static 'mystyle.css' %}">
 </head>
 
+
+<nav class="navbar-nav navbar-expand sticky-top">
+  <div class="container-fluid" style="background-color: #169B62;">
+      <ul class="navbar-nav" >
+          <a class="navbar-brand" href="/">
+              <img src="{% static 'logosquare.png' %}" alt="ISAA LOGO" width="32" height="32">
+          </a>
+          <li class="nav-item">
+              <a class="nav-link link-light" href="/"><b>HOME</b></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link link-light" href="/clubs"><b>CLUBS</b></a>
+          </li>
+          <li class="nav-item"></li>
+              <a class="nav-link link-light" href="/history"><b>HISTORY</b></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link link-light" href="/resources"><b>RESOURCES</b></a>
+          </li>
+          <li class="nav-item"></li>
+              <a class="nav-link link-light" href="/gallery"><b>GALLERY</b></a>
+          </li>
+      </ul>
+  </div>
+  </nav>
+
 <body class="background_headache">
 <!-- style="background: linear-gradient(to right, #169B62 20%, white 50%, #FF883E 80%);" -->
-<div class="container-fluid sticky-top" style="background-color: #169B62;">
-    <ul class="nav" >
-        <a class="navbar-brand" href="/">
-            <img src="{% static 'logosquare.png' %}" alt="ISAA LOGO" width="32" height="32">
-        </a>
-        <li class="nav-item">
-            <a class="nav-link link-light" href="/"><b>HOME</b></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link link-light" href="/clubs"><b>CLUBS</b></a>
-        </li>
-        <li class="nav-item"></li>
-            <a class="nav-link link-light" href="/history"><b>HISTORY</b></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link link-light" href="/resources"><b>RESOURCES</b></a>
-        </li>
-        <li class="nav-item"></li>
-            <a class="nav-link link-light" href="/gallery"><b>GALLERY</b></a>
-        </li>
-    </ul>
-</div>
+
+
+
 <p class="container-fluid">
-    <div class="container" style="min-height: 600px;">
+    <div class="container">
         {% block content %}
         {% endblock %}
     </div>
